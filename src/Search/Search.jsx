@@ -21,7 +21,6 @@ const Search = () => {
         fetch(`https://api.openweathermap.org/data/2.5/weather?q=${val}&units=metric&appid=e409e90475b3b569c06c30191d9fa161`)
             .then(function (resp) { return resp.json() })
             .then((data) => {
-                console.log(data)
                 setCity(data.name);
                 setHumidity(data.main.humidity);
                 setTemp(data.main.temp)

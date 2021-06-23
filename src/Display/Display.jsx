@@ -20,7 +20,7 @@ const Display = ({ city, humidity, temperature, icon, desc, country }) => {
             <div className="temp">Temperature: {temperature}°C</div>
             <div className="desc">
                 <div className="temp">Description: {desc}</div>
-                <img src={'http://openweathermap.org/img/wn/' + icon + '@2x.png'} alt="" />
+                <img src={'https://openweathermap.org/img/wn/' + icon + '@2x.png'} alt="" />
             </div>
 
         </div>)
