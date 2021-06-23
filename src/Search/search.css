@@ -1,5 +1,37 @@
 .father{
+    display:flex;
+    flex-direction: column;
     padding: 35px;
     text-align: center;
-    background-color: rgba(255,255,255,0.5);
+    background-color: rgba(165, 160, 160, 0.555);
+}
+
+.search-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 25px;
+}
+
+.search-container{
+    margin-right: 12px;
+}
+
+#input-with-icon-grid:focus{
+    color: white;
+}
+
+#input-with-icon-grid{
+    color: white;
+}
+#input-with-icon-grid:hover{
+    border-color: white;
+    outline-color: white;
+}
+
+#button-search{
+    color: white;
+    border-color: white;
+    border-style: solid;
+    border-width: 0.2px;
 }

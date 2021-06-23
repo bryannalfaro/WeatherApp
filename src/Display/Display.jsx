@@ -5,9 +5,9 @@ import './display.css'
 const Display = ({city, humidity, temperature}) => {
     return(
     <div className="container">
-        <div className="city">Ciudad: {city}</div>
-        <div className="humidity">Humedad: {humidity}%</div>
-        <div className="temp">Temperatura: {temperature}°C</div>
+        <div className="city">City: {city}</div>
+        <div className="humidity">Humidity: {humidity}%</div>
+        <div className="temp">Temperature: {temperature}°C</div>
     </div>)
 
 }
