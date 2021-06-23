@@ -15,7 +15,7 @@ const Search = () => {
     const ApiData = (val) => {
 
         // eslint-disable-next-line no-restricted-globals
-        fetch(`http://api.openweathermap.org/data/2.5/weather?q=${val}&units=metric&appid=e409e90475b3b569c06c30191d9fa161`)
+        fetch(`https://api.openweathermap.org/data/2.5/weather?q=${val}&units=metric&appid=e409e90475b3b569c06c30191d9fa161`)
             .then(function (resp) { return resp.json() })
             .then((data) => {
                 setCity(data.name);
