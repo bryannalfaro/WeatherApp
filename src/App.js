@@ -8,6 +8,7 @@ function App() {
     <div className="App">
       <h1>WEATHER APP</h1>
       <Search />
+      <h3>Made by: Bryann Alfaro</h3>
     </div>
   );
 }

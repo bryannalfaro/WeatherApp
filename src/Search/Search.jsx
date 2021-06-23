@@ -11,6 +11,9 @@ const Search = () => {
     const [citys, setCity] = useState('')
     const [humiditys, setHumidity] = useState('')
     const [temp, setTemp] = useState('')
+    const [icon, setIcon] = useState('')
+    const [desc, setDesc] = useState('')
+    const [country, setCountry] = useState('')
 
     const ApiData = (val) => {
 
@@ -18,9 +21,13 @@ const Search = () => {
         fetch(`https://api.openweathermap.org/data/2.5/weather?q=${val}&units=metric&appid=e409e90475b3b569c06c30191d9fa161`)
             .then(function (resp) { return resp.json() })
             .then((data) => {
+                console.log(data)
                 setCity(data.name);
                 setHumidity(data.main.humidity);
                 setTemp(data.main.temp)
+                setIcon(data.weather[0].icon)
+                setDesc(data.weather[0].description)
+                setCountry(data.sys.country)
             }).catch((err) => {
                 setCity('');
                 setHumidity('');
@@ -52,7 +59,7 @@ const Search = () => {
             </div>
 
 
-            <Display city={citys} humidity={humiditys} temperature={temp} />
+            <Display city={citys} humidity={humiditys} temperature={temp} icon={icon} desc={desc} country={country} />
         </div>
     )
 }
