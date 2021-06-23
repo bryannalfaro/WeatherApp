@@ -1,13 +1,13 @@
-import background from './images/sky.jpg'
 import './App.css';
 import Search from './Search/Search'
+
 
 function App() {
 
   return (
     <div className="App">
+      <h1>WEATHER APP</h1>
       <Search />
-        <img src={background} alt="logo" className="background" />
     </div>
   );
 }
